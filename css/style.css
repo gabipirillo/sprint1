@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
+
+
+body::before{
+    content: "";
+    background-image: url("/imagens/wllppr-mobile.avif");
+    height: 60vh;
+    width: 98.7vw;
+    display: flex;
+    position: absolute;
+    z-index: -10;
+    opacity: 100;
+    background-size: cover;
+}
+
+:root {
+    --color-destak: #2F6AA5;
+    --color-black: #1B1B1B;
+    --color-white: #ECECEC;
+    --font-title: "Nanum Myeongjo",sans-serif;
+    --font-media:"Poiret One",sans-serif;
+    --font-body: "Nixie One", sans-serif;
+}
+
+h1{
+    font-family:"Nanum Myeongjo",sans-serif;
+    color: #BE94F3;
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2;
+    z-index: 1;
+    margin:0;
+}
+
+
+h2{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #BE94F3;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
+h3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #BE94F3;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+
+h4{
+    font-family:"Poiret One",sans-serif;
+    color: #0c0c0c;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+   
+}
+/* h5{
+    
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: "Poiret One",sans-serif;
+    color: #0c0c0c;
+}
+
+#secao-apresentacao {
+    display: flex;
+    padding: 2rem;
+   /*1rem=16px;*/
+   align-items: center;
+}
+
+#texto-apresentacao h2{
+    font-size: 1.2rem;
+    font-family: "Poiret One",sans-serif;
+    color: #0c0c0c;
+    margin: 0; /* Remove a margem ao redor dos parágrafos */
+    padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
+}
+#secao-apresentacao img {
+    border-radius:0%;
+}
+
+#secao-proposta{
+    position:relative;
+    top: -60px;
+}
+
+#texto-proposta h2{
+    font-size: 1.2rem;
+    font-family: "Poiret One",sans-serif;
+    color: #0c0c0c;
+    margin: 0; /* Remove a margem ao redor dos parágrafos */
+    padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
+}
+
+#texto-apresentacao p {
+
+    font-size: 1.2rem;
+    font-family:var(--font-body);
+}
+
+#texto-apresentacao {
+    color: var(--color-destak);
+}
+
+.header img.Magnus {
+    display: flex;
+    position: absolute; /* Posição absoluta para o logo */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    width: 70px; /* Largura do logo */
+    height: 70px; /* Altura do logo */
+  }
+
+.header img.Sanofi {
+   display: flex;
+   position: absolute; /* Posição absoluta para o logo */
+   top: 300px; /* Distância do topo */
+   right: 710px; /* Distância da direita */
+   width: 100px; /* Largura do logo */
+   height: 50px; /* Altura do logo */
+ }
+
+.header img.FIAP {
+   display: flex;
+   position: absolute; /* Posição absoluta para o logo */
+   top: 310px; /* Distância do topo */
+   right: 570px; /* Distância da direita */
+   width: 90px; /* Largura do logo */
+   height: 25px; /* Altura do logo */
+ }
+
+
+
+
+  .content {
+    padding: 25px; /* Espaçamento interno do conteúdo */
+
+  }
+
+  #secao-abas{
+    /* background-color:rgb(207, 235, 243); */
+    height: 100vh;
+}
+    
+#secao-abas ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0; /* Removendo o preenchimento padrão das listas */
+}
+
+/* .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #b19cd9;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+   */
+   /* #secao-projetos{
+    background-color:burlywood;
+    height: 100vh;
+}
+
+#secao-projetos ul{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr; --> maneira "analogica" = sem função*/
+    /* grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.card{
+    max-width: 300px;
+    height: 420px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity .8s, top .5s;
+}
+
+.card:hover .card-text{
+    opacity: 1;
+    top: 15%;
+}
+
+.card:hover .image-wrapper{
+    opacity: .3;
+}    */ 
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    background-color: #BE94F3;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 20px;
+    font-family: "Poiret One",sans-serif;
+    line-height: 1.5;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin-left: 25%;
+
+}
+
+.card b {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);    
+}
+
+  form {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"], input[type="number"], input[type="time"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #BE94F3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #BE94F3;
+  }
