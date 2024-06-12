@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
-
 
 body::before{
     content: "";
     background-image: url("/imagens/wllppr-mobile.avif");
-    height: 60vh;
+    height: 55vh;
     width: 98.7vw;
     display: flex;
     position: absolute;
@@ -68,9 +62,6 @@ h4{
     font-weight: bold; 
    
 }
-/* h5{
-    
-} */
 
 body {
     margin: 0;
@@ -80,22 +71,40 @@ body {
     color: #0c0c0c;
 }
 
+
+
 #secao-apresentacao {
     display: flex;
     padding: 2rem;
    /*1rem=16px;*/
-   align-items: center;
+    align-items: center;
+    
+    
 }
 
 #texto-apresentacao h2{
+    display: flex;
     font-size: 1.2rem;
     font-family: "Poiret One",sans-serif;
     color: #0c0c0c;
     margin: 0; /* Remove a margem ao redor dos parágrafos */
     padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
+    margin-top: 1rem;
 }
 #secao-apresentacao img {
+    display: flex;
     border-radius:0%;
+    margin: 0;
+    justify-content: flex-start;
+}
+
+#texto-apresentacao p {
+    font-size: 1.2rem;
+    font-family:var(--font-body);
+}
+
+#texto-apresentacao {
+    color: var(--color-destak);
 }
 
 #secao-proposta{
@@ -107,52 +116,52 @@ body {
     font-size: 1.2rem;
     font-family: "Poiret One",sans-serif;
     color: #0c0c0c;
-    margin: 0; /* Remove a margem ao redor dos parágrafos */
+    margin: 30px; /* Remove a margem ao redor dos parágrafos */
     padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
-}
-
-#texto-apresentacao p {
-
-    font-size: 1.2rem;
-    font-family:var(--font-body);
-}
-
-#texto-apresentacao {
-    color: var(--color-destak);
 }
 
 .header img.Magnus {
     display: flex;
-    position: absolute; /* Posição absoluta para o logo */
+    position: absolute; 
     top: 10px; /* Distância do topo */
     right: 10px; /* Distância da direita */
     width: 70px; /* Largura do logo */
     height: 70px; /* Altura do logo */
   }
 
-.header img.Sanofi {
-   display: flex;
-   position: absolute; /* Posição absoluta para o logo */
-   top: 300px; /* Distância do topo */
-   right: 710px; /* Distância da direita */
-   width: 100px; /* Largura do logo */
-   height: 50px; /* Altura do logo */
- }
+
+ .header img.Sanofi{
+    display: flex;
+    position: absolute;
+    top: 34%; /* Posição vertical da imagem */
+    left: 55%; /* Posição horizontal do centro da imagem */
+    transform: translateX(-50%); /* Centralizar a imagem horizontalmente */
+    width: 77px; /* Largura da imagem */
+    height: 50px; /* Altura da imagem */
+    align-items: center;
+}
 
 .header img.FIAP {
-   display: flex;
-   position: absolute; /* Posição absoluta para o logo */
-   top: 310px; /* Distância do topo */
-   right: 570px; /* Distância da direita */
-   width: 90px; /* Largura do logo */
-   height: 25px; /* Altura do logo */
- }
-
-
-
-
+    display: flex;
+    position: absolute;
+    top: 35.5%; /* Posição vertical da imagem */
+    left: 45%; /* Posição horizontal do centro da imagem */
+    transform: translateX(-50%); /* Centralizar a imagem horizontalmente */
+    width: 75px; /* Largura da imagem */
+    height: 23px; /* Altura da imagem */
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .header img.Sanofi,
+    .header img.FIAP {
+           top: 90vh;
+           width: 50px;
+           height: 25px;
+       }
+   }
   .content {
     padding: 25px; /* Espaçamento interno do conteúdo */
+    flex-direction: column;
 
   }
 
@@ -168,74 +177,6 @@ body {
     list-style: none;
     padding: 0; /* Removendo o preenchimento padrão das listas */
 }
-
-/* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.card {
-    background-color: #b19cd9;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-   */
-   /* #secao-projetos{
-    background-color:burlywood;
-    height: 100vh;
-}
-
-#secao-projetos ul{
-    display: grid;
-    /*grid-template-columns: 1fr 1fr 1fr; --> maneira "analogica" = sem função*/
-    /* grid-template-columns: repeat(4, 1fr);
-    place-items: center;
-}
-
-.card{
-    max-width: 300px;
-    height: 420px;
-    position: relative;
-    cursor: pointer;
-}
-
-.image-wrapper{
-    width: 100%;
-    height: 100%;
-}
-
-.image-wrapper img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.card-text{
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    transition: opacity .8s, top .5s;
-}
-
-.card:hover .card-text{
-    opacity: 1;
-    top: 15%;
-}
-
-.card:hover .image-wrapper{
-    opacity: .3;
-}    */ 
-
 
 .grid-container {
     display: grid;
@@ -313,3 +254,68 @@ body {
   input[type="submit"]:hover {
     background-color: #BE94F3;
   }
+
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-image: url('/imagens/wllppr-mobile.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-container {
+    position: relative;
+    max-width: 800px; /* Largura máxima do rodapé */
+    margin: auto;
+  }
+
+  
+  .footer-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .member {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .member img {
+    width: 100px; /* Largura das fotos */
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .member p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #a8a1b1;
+  }
+
+  /* .header img.FIAP {
+    display: flex; */
+    /* position: absolute; Posição absoluta para o logo */
+    /* top: 310px; /* Distância do topo */
+    /* right: 570px; Distância da direita
+    width: 90px; /* Largura do logo */
+    /* height: 10px; Altura do logo */ 
+
+    /* .header img.Sanofi { */
+        /* display: flex;
+        /* position: absolute; Posição absoluta para o logo */
+        /* justify-content: center;
+        width: 100px; /* Largura do logo */
+        /* height: 50px; /* Altura do logo */
+        /* grid-template-columns: repeat(auto-fit, 100px); */
+        /* display: flex; */
+        /* position: absolute; Posição absoluta para o logo */
+        /* top: 310px; Distância do topo
+        right: 570px; /* Distância da direita */
+        /* width: 90px; /* Largura do logo */
+        /* height: 25px; Altura do logo */
