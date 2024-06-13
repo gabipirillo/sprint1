@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&family=Nixie+One&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
 
-body::before{
+#secao-wallpaper{
     content: "";
-    background-image: url("/imagens/wllppr-mobile.avif");
-    height: 55vh;
-    width: 98.7vw;
+    background-image: url("/imagens/wallpaper-mobile-editado.png");
+    height: 100vh;  
+    width: 100vw;  
     display: flex;  
-    position: absolute;
-    z-index: -10;
-    opacity: 100;
-    background-size: cover;
+    position: fixed; 
+    top: 0;         
+    left: 0;       
+    z-index: -10;    
+    /* opacity: 0.98;    */
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 :root {
@@ -78,14 +81,15 @@ body {
     padding: 2rem;
    /*1rem=16px;*/
     align-items: center;
-    /* flex-direction: column; */
+        
 }
 
 #texto-apresentacao h2{
     display: flex;
     font-size: 1.2rem;
     font-family: "Poiret One",sans-serif;
-    color: #0c0c0c;
+    text-shadow: 9px 9px 9px #000000;
+    color: #ECECEC;
     margin: 0; /* Remove a margem ao redor dos parágrafos */
     padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
     margin-top: 1rem;
@@ -114,7 +118,8 @@ body {
 #texto-proposta h2{
     font-size: 1.2rem;
     font-family: "Poiret One",sans-serif;
-    color: #0c0c0c;
+    color: #ECECEC;
+    text-shadow: 9px 9px 9px #000000;
     margin: 30px; /* Remove a margem ao redor dos parágrafos */
     padding: 0; /* Remove o preenchimento ao redor dos parágrafos */
 }
@@ -132,10 +137,10 @@ body {
  .header img.Sanofi{
     display: flex;
     position: absolute;
-    top: 34%; /* Posição vertical da imagem */
+    top: 36%; /* Posição vertical da imagem */
     left: 55%; /* Posição horizontal do centro da imagem */
     transform: translateX(-50%); /* Centralizar a imagem horizontalmente */
-    width: 77px; /* Largura da imagem */
+    width: 85px; /* Largura da imagem */
     height: 50px; /* Altura da imagem */
     align-items: center;
 }
@@ -143,7 +148,7 @@ body {
 .header img.FIAP {
     display: flex;
     position: absolute;
-    top: 35.5%; /* Posição vertical da imagem */
+    top: 37.8%; /* Posição vertical da imagem */
     left: 45%; /* Posição horizontal do centro da imagem */
     transform: translateX(-50%); /* Centralizar a imagem horizontalmente */
     width: 75px; /* Largura da imagem */
@@ -221,6 +226,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ECECEC;
+    text-shadow: 9px 9px 9px #000000;
   }
   label {
     display: block;
@@ -258,7 +265,7 @@ body {
   footer {
     padding: 20px;
     text-align: center;
-    background-image: url('/imagens/wllppr-mobile.avif');
+    /* background-image: url('/imagens/wllppr-mobile.avif'); */
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -279,7 +286,7 @@ body {
   }
   
   .member {
-    margin: 20px;
+    margin: 25px;
     text-align: center;
   }
   
@@ -296,25 +303,3 @@ body {
     margin-bottom: 20px;
     color: #a8a1b1;
   }
-
-  /* .header img.FIAP {
-    display: flex; */
-    /* position: absolute; Posição absoluta para o logo */
-    /* top: 310px; /* Distância do topo */
-    /* right: 570px; Distância da direita
-    width: 90px; /* Largura do logo */
-    /* height: 10px; Altura do logo */ 
-
-    /* .header img.Sanofi { */
-        /* display: flex;
-        /* position: absolute; Posição absoluta para o logo */
-        /* justify-content: center;
-        width: 100px; /* Largura do logo */
-        /* height: 50px; /* Altura do logo */
-        /* grid-template-columns: repeat(auto-fit, 100px); */
-        /* display: flex; */
-        /* position: absolute; Posição absoluta para o logo */
-        /* top: 310px; Distância do topo
-        right: 570px; /* Distância da direita */
-        /* width: 90px; /* Largura do logo */
-        /* height: 25px; Altura do logo */

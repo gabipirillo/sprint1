@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
     //   return false; // impede que o formulário seja submetido ao servidor
     });
+
+    if (documento === '' || paginas === '' || tempo === '' || imagens === '') {
+      alert('Por favor, preencha todos os campos obrigatórios!');
+      return;
+    }
   });

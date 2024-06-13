@@ -14,6 +14,9 @@
         <h2>PROJETO</h2>
         <h1>STORYTELLING</h1>
         <h3>GERADOR DE POWER POINT</h3>
+        <div id="secao-wallpaper">
+            </div>
+
     </div>
     <div class="header">
         <img class="Sanofi" src="imagens/logo-sanofi.branco.png" alt="Logo Sanofi">
@@ -21,7 +24,7 @@
         <img class="Magnus" src="/imagens/logo-magnus.branco.png" alt="Logo Magnus">
     </div>
     <section id="secao-apresentacao">
-        <img src="/imagens/logomagnus-removebg-preview.png" alt="foto Magnus" height="150">
+        <img src="/imagens/logo-magnus.branco.png" alt="foto Magnus" height="150">
         <div id="texto-apresentacao">
             <h2>Somos o grupo Magnus, estamos no 3º ano de Engenharia de computação da FIAP, este é um projeto da FIAP
                 em parceria com a empresa Sanofi, a qual nos deu inúmeras propostas de projetos para escolhermos um e
@@ -82,17 +85,17 @@
 
 <h2>FORMULÁRIO DE DOCUMENTO</h2>
 <form>
-    <label for="documento">Documento a ser lido:</label>
-    <input type="text" id="documento" name="documento" placeholder="Insira o arquivo do documento"><br><br>
+    <label for="documento">Tema da apresentação:</label>
+    <input type="text" id="documento" name="documento" placeholder="Insira o tema da apresentação" required><br><br>
 
     <label for="paginas">Quantidade de páginas:</label>
-    <input type="number" id="paginas" name="paginas" placeholder="Insira a quantidade de páginas"><br><br>
+    <input type="number" id="paginas" name="paginas" placeholder="Insira a quantidade de páginas"required><br><br>
 
     <label for="tempo">Tempo de duração aproximada:</label>
-    <input type="time" id="tempo" name="tempo" placeholder="Insira o tempo de duração aproximada (hh:mm:ss)"><br><br>
+    <input type="time" id="tempo" name="tempo" placeholder="Insira o tempo de duração aproximada (hh:mm:ss)"required><br><br>
 
     <label for="imagens">Imagens (Sim ou Não):</label>
-    <select id="imagens" name="imagens">
+    <select id="imagens" name="imagens"required>
         <option value="sim">Sim</option>
         <option value="nao">Não</option>
     </select><br><br>
